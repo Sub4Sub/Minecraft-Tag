@@ -19,12 +19,6 @@ execute as @a[tag=inMap] run scoreboard players set @s boundryTimer 0
 
 execute as @a[tag=outMap] run scoreboard players add @s boundryTimer 1
 
-execute as @a[tag=outMap] if score @s boundryTimer matches 20 run tell @s If you remain out of bounds you will become it
-
-#if a players score reaches 6000 run the stop function
-execute as @a[tag=outMap] if score @s boundryTimer matches 200 run say @s stayed out of bounds for to long
-execute as @a[tag=outMap] if score @s boundryTimer matches 200 run kill @s
-
 #if a players score reaches 6000 run the stop function
 execute as @a if score @s tagScore matches 300 run function tag:stop
 

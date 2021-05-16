@@ -36,6 +36,8 @@ scoreboard objectives setdisplay sidebar tagScore
 scoreboard objectives add boundryTimer dummy
 # Add all players with the player tag to the tagScore scoreboard
 scoreboard players set @a[tag=player] boundryTimer 0
+# Adding a dummy player to the hit scoreboard with a score of 0 that is used for comparisons
+scoreboard players set dummy boundryTimer 0
 
 # Adding a scoreboard called winner that will display the winner after the game instance
 scoreboard objectives add Winner dummy

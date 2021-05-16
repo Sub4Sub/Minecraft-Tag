@@ -32,10 +32,7 @@ scoreboard players set @a[tag=player] tagScore 0
 # Display the tagScore scoreboard on the sidebar
 scoreboard objectives setdisplay sidebar tagScore
 
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add boundryTimer dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] boundryTimer 0
+
 
 # Adding a scoreboard called winner that will display the winner after the game instance
 scoreboard objectives add Winner dummy
@@ -45,8 +42,6 @@ execute as @p[tag=player, nbt=!{Inventory:[]}] run function util:unclearinv
 
 # Spread all players with the player tag across the map
 spreadplayers -181 5136 10 40 false @a[tag=player]
-
-tag @a[tag=player] add inMap
 
 # Give a random player the it tag
 tag @r[tag=player] add it
