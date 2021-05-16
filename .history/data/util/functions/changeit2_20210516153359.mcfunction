@@ -1,0 +1,1 @@
+execute as @a[tag=player] if score @s tagPlayers > dummy tagPlayers run function util:changeit

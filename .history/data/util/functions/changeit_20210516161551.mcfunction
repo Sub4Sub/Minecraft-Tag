@@ -29,4 +29,3 @@ effect give @a[tag=it] minecraft:blindness 10 2
 effect give @a[tag=it] minecraft:slowness 10 2
 
 scoreboard players set @a[tag=it] tagPlayers 0
-scoreboard players set @a[tag=it] tagDeaths 0

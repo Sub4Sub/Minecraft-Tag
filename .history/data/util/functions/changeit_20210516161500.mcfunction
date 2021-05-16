@@ -2,8 +2,6 @@
 # Clear all effects from the player who is it
 effect clear @a[tag=it]
 
-clear @a[tag=it]
-
 # Set the player who is it's tagplayer score to 0 
 scoreboard players set @a[tag=it] tagPlayers 0
 # Set the player who is it's hit score to 0 
@@ -29,4 +27,3 @@ effect give @a[tag=it] minecraft:blindness 10 2
 effect give @a[tag=it] minecraft:slowness 10 2
 
 scoreboard players set @a[tag=it] tagPlayers 0
-scoreboard players set @a[tag=it] tagDeaths 0

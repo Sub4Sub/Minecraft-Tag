@@ -14,9 +14,9 @@ scoreboard players set dummy tagPlayers 0
 # Define a tagDeaths scoreboard that updates when players die
 scoreboard objectives add tagDeaths deathCount
 # Add all players with the player tag to the tagPlayers scoreboard
-scoreboard players set @a[tag=player] tagDeaths 0
+scoreboard players set @a[tag=player] deathCount 0
 # Adding a dummy player to the tagPlayer scoreboard with a score of 0 that is used for comparisons
-scoreboard players set dummy tagDeaths 0
+scoreboard players set dummy deathCount 0
 
 # Define a hit scoreboard that updates when player hits another player with a stick
 scoreboard objectives add hit minecraft.used:minecraft.stick

@@ -1,0 +1,1 @@
+execute as @a[tag=it] if score @s hit > dummy hit run function util:changeit
