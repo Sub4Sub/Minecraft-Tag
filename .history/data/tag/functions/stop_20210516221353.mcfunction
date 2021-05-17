@@ -13,18 +13,10 @@ scoreboard objectives remove hit
 scoreboard objectives remove tagDeaths
 scoreboard objectives remove boundryTimer
 scoreboard objectives remove holdStillTimer
-scoreboard objectives remove tagCurrentPosX
-scoreboard objectives remove tagCurrentPosY
-scoreboard objectives remove tagCurrentPosZ
-scoreboard objectives remove tagPrevPosX
-scoreboard objectives remove tagPrevPosY
-scoreboard objectives remove tagPrevPosZ
+scoreboard objectives remove boundryTimer
+scoreboard objectives remove boundryTimer
 
 scoreboard objectives setdisplay sidebar Winner
-
-tag @a remove inMap
-tag @a remove outMap
-tag @a remove holdingStill
 
 tag @a remove it
 tag @a remove player

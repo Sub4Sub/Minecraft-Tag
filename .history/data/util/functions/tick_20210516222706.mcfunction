@@ -13,9 +13,7 @@ tag @a[tag=inMap] remove inMap
 
 execute as @a[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189] run tag @s add inMap
 
-tag @a[tag=!inMap, tag=player] add outMap
-
-tag @a[tag=!inMap, tag=it] add outMap
+tag @a[tag=!inMap] add outMap
 
 execute as @a[tag=inMap] run scoreboard players set @s boundryTimer 0
 

@@ -37,43 +37,6 @@ scoreboard objectives add boundryTimer dummy
 # Add all players with the player tag to the tagScore scoreboard
 scoreboard players set @a[tag=player] boundryTimer 0
 
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add holdStillTimer dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] holdStillTimer 0
-
-
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagPrevPosX dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagPrevPosX 0
-
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagPrevPosY dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagPrevPosY 0
-
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagPrevPosZ dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagPrevPosZ 0
-
-
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagCurrentPosX dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagCurrentPosX 0
-
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagCurrentPosY dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagCurrentPosY 0
-
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagCurrentPosZ dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagCurrentPosZ 0
-
 # Adding a scoreboard called winner that will display the winner after the game instance
 scoreboard objectives add Winner dummy
 
@@ -85,7 +48,7 @@ spreadplayers -181 5136 10 40 false @a[tag=player]
 
 tag @a[tag=player] add inMap
 
-spawnpoint @a[tag=player] -181 60 5136
+spawnpoint @a[tag=player] -181 40 5136
 
 # Give a random player the it tag
 tag @r[tag=player] add it

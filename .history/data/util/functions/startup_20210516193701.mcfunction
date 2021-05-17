@@ -37,11 +37,6 @@ scoreboard objectives add boundryTimer dummy
 # Add all players with the player tag to the tagScore scoreboard
 scoreboard players set @a[tag=player] boundryTimer 0
 
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add holdStillTimer dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] holdStillTimer 0
-
 
 # Define a tagScore scoreboard that holds a dummy value
 scoreboard objectives add tagPrevPosX dummy

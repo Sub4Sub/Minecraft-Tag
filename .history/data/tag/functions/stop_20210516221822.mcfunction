@@ -22,10 +22,6 @@ scoreboard objectives remove tagPrevPosZ
 
 scoreboard objectives setdisplay sidebar Winner
 
-tag @a remove inMap
-tag @a remove outMap
-tag @a remove holdingStill
-
 tag @a remove it
 tag @a remove player
 

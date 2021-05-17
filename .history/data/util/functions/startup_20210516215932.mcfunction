@@ -77,6 +77,9 @@ scoreboard players set @a[tag=player] tagCurrentPosZ 0
 # Adding a scoreboard called winner that will display the winner after the game instance
 scoreboard objectives add Winner dummy
 
+scoreboard objectives add winnerTimer dummy
+scoreboard players set dummy winnerTimer 0
+
 # Execute the util:unclearinv function as every player who has an unclear inventory & the player tag 
 execute as @p[tag=player, nbt=!{Inventory:[]}] run function util:unclearinv
 

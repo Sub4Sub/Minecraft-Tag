@@ -37,42 +37,22 @@ scoreboard objectives add boundryTimer dummy
 # Add all players with the player tag to the tagScore scoreboard
 scoreboard players set @a[tag=player] boundryTimer 0
 
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add holdStillTimer dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] holdStillTimer 0
-
 
 # Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagPrevPosX dummy
+scoreboard objectives add tagPosX dummy
 # Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagPrevPosX 0
+scoreboard players set @a[tag=player] tagPosX 0
 
 # Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagPrevPosY dummy
+scoreboard objectives add tagPosY dummy
 # Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagPrevPosY 0
+scoreboard players set @a[tag=player] tagPosY 0
 
 # Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagPrevPosZ dummy
+scoreboard objectives add tagPosZ dummy
 # Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagPrevPosZ 0
+scoreboard players set @a[tag=player] tagPosZ 0
 
-
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagCurrentPosX dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagCurrentPosX 0
-
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagCurrentPosY dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagCurrentPosY 0
-
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add tagCurrentPosZ dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] tagCurrentPosZ 0
 
 # Adding a scoreboard called winner that will display the winner after the game instance
 scoreboard objectives add Winner dummy

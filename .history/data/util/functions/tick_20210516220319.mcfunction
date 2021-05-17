@@ -13,9 +13,7 @@ tag @a[tag=inMap] remove inMap
 
 execute as @a[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189] run tag @s add inMap
 
-tag @a[tag=!inMap, tag=player] add outMap
-
-tag @a[tag=!inMap, tag=it] add outMap
+tag @a[tag=!inMap] add outMap
 
 execute as @a[tag=inMap] run scoreboard players set @s boundryTimer 0
 
@@ -55,11 +53,7 @@ execute as @a[tag=player] store result score @s tagPrevPosZ run scoreboard playe
 
 scoreboard players add dummy winnerTimer 1
 
-execute as @a[tag=winner] if score dummy winnerTimer matches 20 run scoreboard players remove @s Winner 1
-
-execute as @a[tag=winner] if score dummy winnerTimer matches 20 run scoreboard players set dummy winnerTimer 0
-
-execute as @a[tag=winner] if score @s Winner matches 0 run function util:stop2
+execute as @a[tag=winner] if score dummy winnerTimer matches 20
 
 #if a players score reaches 6000 run the stop function
 execute as @a if score @s tagScore matches 6000 run function tag:stop
