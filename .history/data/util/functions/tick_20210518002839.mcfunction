@@ -56,7 +56,7 @@ effect give @a[tag=player] minecraft:saturation 1 1
 
 effect give @a[tag=it] minecraft:saturation 1 1
 
-effect give @a[tag=it] minecraft:resistance 6 1
+effect give @a[tag=it] minecraft:resistance 1 1
 
 scoreboard players add dummy winnerTimer 1
 

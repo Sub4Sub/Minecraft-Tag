@@ -19,7 +19,7 @@ scoreboard players set @a[tag=player] tagDeaths 0
 scoreboard players set dummy tagDeaths 0
 
 # Define a hit scoreboard that updates when player hits another player with a stick
-scoreboard objectives add hit minecraft.custom:damage_dealt
+scoreboard objectives add hit minecraft.used:minecraft.stick
 # Add all players with the player tag to the hit scoreboard
 scoreboard players set @a[tag=player] hit 0
 # Adding a dummy player to the hit scoreboard with a score of 0 that is used for comparisons

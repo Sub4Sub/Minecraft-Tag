@@ -56,8 +56,6 @@ effect give @a[tag=player] minecraft:saturation 1 1
 
 effect give @a[tag=it] minecraft:saturation 1 1
 
-effect give @a[tag=it] minecraft:resistance 6 1
-
 scoreboard players add dummy winnerTimer 1
 
 execute as @a[tag=winner] if score dummy winnerTimer matches 20 run scoreboard players remove @s Winner 1
