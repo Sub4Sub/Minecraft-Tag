@@ -4,8 +4,6 @@ scoreboard players set tagRunner isRunning 1
 # Tag all players inside of the map
 tag @a[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189] add player
 
-
-
 # Define a tagPlayers scoreboard that updates when players take damage
 scoreboard objectives add tagPlayers minecraft.custom:minecraft.damage_taken
 # Add all players with the player tag to the tagPlayers scoreboard
