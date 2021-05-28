@@ -12,8 +12,6 @@ execute as @a[tag=player] if score @s tagPlayers > dummy tagPlayers run function
 execute as @a[tag=player] if score @s tagDeaths > dummy tagDeaths run function util:changeit
 
 
-execute as @a[tag=it] if score @s itTimer > radarDummy itTimer run function util:radar
-
 
 
 tag @a[tag=inMap] remove inMap

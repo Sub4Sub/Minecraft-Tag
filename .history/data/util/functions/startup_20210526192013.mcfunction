@@ -4,7 +4,7 @@ scoreboard players set tagRunner isRunning 1
 # Tag all players inside of the map
 tag @a[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189] add player
 
-gamemode adventure @a[tag=player]
+
 
 # Define a tagPlayers scoreboard that updates when players take damage
 scoreboard objectives add tagPlayers minecraft.custom:minecraft.damage_taken
@@ -75,15 +75,6 @@ scoreboard players set @a[tag=player] tagCurrentPosY 0
 scoreboard objectives add tagCurrentPosZ dummy
 # Add all players with the player tag to the tagScore scoreboard
 scoreboard players set @a[tag=player] tagCurrentPosZ 0
-
-
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add itTimer dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] itTimer 0
-
-scoreboard players set speedDummy itTimer 300
-scoreboard players set radarDummy itTimer 600
 
 # Adding a scoreboard called winner that will display the winner after the game instance
 scoreboard objectives add Winner dummy

@@ -3,16 +3,12 @@
 # Increasing all players with the player tags score by 1 per tick
 scoreboard players add @a[tag=player] tagScore 1
 
-scoreboard players add @a[tag=it] itTimer 1
-
 # If a player takes any damage run the changeIt2 function
 execute as @a[tag=player] if score @s tagPlayers > dummy tagPlayers run function util:changeit2
 
 # If a player dies run the changeIt function
 execute as @a[tag=player] if score @s tagDeaths > dummy tagDeaths run function util:changeit
 
-
-execute as @a[tag=it] if score @s itTimer > radarDummy itTimer run function util:radar
 
 
 

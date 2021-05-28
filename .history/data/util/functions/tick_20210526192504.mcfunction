@@ -3,17 +3,11 @@
 # Increasing all players with the player tags score by 1 per tick
 scoreboard players add @a[tag=player] tagScore 1
 
-scoreboard players add @a[tag=it] itTimer 1
-
 # If a player takes any damage run the changeIt2 function
 execute as @a[tag=player] if score @s tagPlayers > dummy tagPlayers run function util:changeit2
 
 # If a player dies run the changeIt function
 execute as @a[tag=player] if score @s tagDeaths > dummy tagDeaths run function util:changeit
-
-
-execute as @a[tag=it] if score @s itTimer > radarDummy itTimer run function util:radar
-
 
 
 tag @a[tag=inMap] remove inMap
@@ -33,8 +27,6 @@ execute as @a[tag=outMap] if score @s boundryTimer matches 10 run tell @s If you
 #if a players score reaches 6000 run the stop function
 execute as @a[tag=outMap] if score @s boundryTimer matches 100 run say @s stayed out of bounds for to long
 execute as @a[tag=outMap] if score @s boundryTimer matches 100 run effect give @s minecraft:instant_damage 5 5
-
-
 
 
 execute as @a[tag=player] store result score @s tagCurrentPosX run data get entity @s Pos[0]
@@ -62,7 +54,6 @@ execute as @a[tag=player] store result score @s tagPrevPosY run scoreboard playe
 execute as @a[tag=player] store result score @s tagPrevPosZ run scoreboard players get @s tagCurrentPosZ
 
 
-
 effect give @a[tag=player] minecraft:saturation 1 1
 
 effect give @a[tag=it] minecraft:saturation 1 1
@@ -79,5 +70,5 @@ execute as @a[tag=winner] if score dummy winnerTimer matches 20 run scoreboard p
 execute as @a[tag=winner] if score @s Winner matches 0 run function util:stop2
 
 #if a players score reaches 6000 run the stop function
-execute as @a if score @s tagScore matches 12000 run function tag:stop
+execute as @a if score @s tagScore matches 6000 run function tag:stop
 

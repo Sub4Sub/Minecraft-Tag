@@ -23,7 +23,6 @@ scoreboard objectives remove tagCurrentPosZ
 scoreboard objectives remove tagPrevPosX
 scoreboard objectives remove tagPrevPosY
 scoreboard objectives remove tagPrevPosZ
-scoreboard objectives remove itTimer
 
 scoreboard objectives setdisplay sidebar Winner
 

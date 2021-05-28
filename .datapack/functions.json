@@ -1,1 +1,1 @@
-{"tag":{"$func":["stop","start"]},"util":{"$func":["startup","unclearinv","tick"]}}
+{"tag":{"$func":["stop","start"]},"util":{"$func":["startup","unclearinv","tick","radar","changeit"]}}

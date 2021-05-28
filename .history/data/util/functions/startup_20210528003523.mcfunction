@@ -76,15 +76,6 @@ scoreboard objectives add tagCurrentPosZ dummy
 # Add all players with the player tag to the tagScore scoreboard
 scoreboard players set @a[tag=player] tagCurrentPosZ 0
 
-
-# Define a tagScore scoreboard that holds a dummy value
-scoreboard objectives add itTimer dummy
-# Add all players with the player tag to the tagScore scoreboard
-scoreboard players set @a[tag=player] itTimer 0
-
-scoreboard players set speedDummy itTimer 300
-scoreboard players set radarDummy itTimer 600
-
 # Adding a scoreboard called winner that will display the winner after the game instance
 scoreboard objectives add Winner dummy
 
