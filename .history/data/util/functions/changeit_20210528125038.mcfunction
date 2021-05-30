@@ -34,4 +34,3 @@ effect give @a[tag=it] minecraft:slowness 10 6
 scoreboard players set @a[tag=it] tagPlayers 0
 scoreboard players set @a[tag=it] tagDeaths 0
 
-tag @a[tag=it] remove holdingStill
