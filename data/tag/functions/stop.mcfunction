@@ -10,6 +10,14 @@ execute if score @s unclear matches 0 run say @s is the winner!
 gamemode survival @a[tag=player]
 gamemode survival @a[tag=it]
 
+effect clear @a[tag=it]
+
+clear @a[tag=it]
+
+effect clear @a[tag=player]
+
+clear @a[tag=player]
+
 scoreboard objectives remove tagPlayers
 scoreboard objectives remove tagScore
 scoreboard objectives remove tagTimer

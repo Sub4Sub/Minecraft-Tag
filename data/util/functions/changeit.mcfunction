@@ -31,6 +31,8 @@ give @a[tag=it] minecraft:stick
 effect give @a[tag=it] minecraft:blindness 10 2
 effect give @a[tag=it] minecraft:slowness 10 6
 
+execute as @a[tag=it] run replaceitem entity @s armor.feet diamond_boots{Enchantments:[{id:depth_strider,lvl:1}]} 1
+
 scoreboard players set @a[tag=it] tagPlayers 0
 scoreboard players set @a[tag=it] tagDeaths 0
 

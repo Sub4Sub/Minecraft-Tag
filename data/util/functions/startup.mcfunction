@@ -117,3 +117,5 @@ give @a[tag=it] minecraft:stick
 effect give @a[tag=it] minecraft:blindness 10 2
 # Make all players who are it slow for 10 seconds
 effect give @a[tag=it] minecraft:slowness 10 6
+
+execute as @a[tag=it] run replaceitem entity @s armor.feet diamond_boots{Enchantments:[{id:depth_strider,lvl:1}]} 1
