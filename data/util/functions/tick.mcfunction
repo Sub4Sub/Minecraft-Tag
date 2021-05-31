@@ -19,14 +19,25 @@ execute as @a[tag=it] if score @s hit > dummy hit run scoreboard players set @s 
 
 
 
-execute as @e[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189, type=zombie] run tag @s add mobInMap
+execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=zombie] run tag @s add mobInMap
 
-execute as @e[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189, type=skeleton] run tag @s add mobInMap 
+execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=skeleton] run tag @s add mobInMap 
  
-execute as @e[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189, type=creeper] run tag @s add mobInMap
+execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=creeper] run tag @s add mobInMap
 
-execute as @e[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189, type=spider] run tag @s add mobInMap
+execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=spider] run tag @s add mobInMap
 
+execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=zombie_villager] run tag @s add mobInMap
+
+execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=enderman] run tag @s add mobInMap
+
+execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=pillager] run tag @s add mobInMap
+
+execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=phantom] run tag @s add mobInMap
+
+execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=drowned] run tag @s add mobInMap
+
+execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=witch] run tag @s add mobInMap
 
 
 tag @a[tag=inMap] remove inMap

@@ -2,7 +2,7 @@
 scoreboard players set tagRunner isRunning 1
 
 # Tag all players inside of the map
-tag @a[x=-128, y=40, z=5081, dx=-235, dy=110, dz=5188] add player
+tag @a[x=-128, y=40, z=5081, dx=-235, dy=150, dz=5188] add player
 
 gamemode adventure @a[tag=player]
 
@@ -101,7 +101,7 @@ spreadplayers -181 5136 10 40 false @a[tag=player]
 
 tag @a[tag=player] add inMap
 
-spawnpoint @a[tag=player] -180 67 5137
+spawnpoint @a[tag=player] -180 70 5137
 
 
 fill -169 58 5127 -173 62 5131 stone hollow
