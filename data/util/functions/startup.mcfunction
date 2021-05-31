@@ -76,6 +76,11 @@ scoreboard objectives add tagCurrentPosZ dummy
 # Add all players with the player tag to the tagScore scoreboard
 scoreboard players set @a[tag=player] tagCurrentPosZ 0
 
+# Define a tagScore scoreboard that holds a dummy value
+scoreboard objectives add unclear dummy
+# Add all players with the player tag to the tagScore scoreboard
+scoreboard players set @a[tag=player] unclear 0
+
 
 # Define a tagScore scoreboard that holds a dummy value
 scoreboard objectives add itTimer dummy

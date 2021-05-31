@@ -5,7 +5,7 @@ scoreboard players set dummy winnerTimer 0
 scoreboard players set @s Winner 10
 tag @s add winner
 
-say @s is the winner!
+execute if score @s unclear matches 0 run say @s is the winner!
 
 gamemode survival @a[tag=player]
 gamemode survival @a[tag=it]
@@ -26,7 +26,9 @@ scoreboard objectives remove tagPrevPosY
 scoreboard objectives remove tagPrevPosZ
 scoreboard objectives remove itTimer
 
-scoreboard objectives setdisplay sidebar Winner
+execute if score @s unclear matches 0 run scoreboard objectives setdisplay sidebar Winner
+
+scoreboard objectives remove unclear
 
 tag @a remove inMap
 tag @a remove outMap
