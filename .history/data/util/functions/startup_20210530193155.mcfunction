@@ -99,7 +99,7 @@ tag @a[tag=player] add inMap
 spawnpoint @a[tag=player] -180 67 5137
 
 
-fill -169 58 5127 -173 62 5131 stone hollow
+fill -169 58 5127 -173 62 5131 stone
 
 
 # Give a random player the it tag

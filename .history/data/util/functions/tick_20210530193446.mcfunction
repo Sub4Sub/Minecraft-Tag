@@ -15,17 +15,7 @@ execute as @a[tag=player] if score @s tagDeaths > dummy tagDeaths run function u
 execute as @a[tag=it] if score @s itTimer > radarDummy itTimer run function util:radar
 
 
-execute as @a[tag=it] if score @s hit > dummy hit run scoreboard players set @s hit 0
 
-
-
-execute as @e[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189, type=zombie] run tag @s add mobInMap
-
-execute as @e[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189, type=skeleton] run tag @s add mobInMap 
- 
-execute as @e[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189, type=creeper] run tag @s add mobInMap
-
-execute as @e[x=-127, y=40, z=5080, dx=-236, dy=110, dz=5189, type=spider] run tag @s add mobInMap
 
 
 
