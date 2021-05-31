@@ -39,6 +39,13 @@ execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=drowned] run 
 
 execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=witch] run tag @s add mobInMap
 
+execute as @e[x=-127, y=40, z=5080, dx=-236, dy=150, dz=5189, type=witch] run tag @s add mobInMap
+
+#execute as @e[x=-169, y=58, z=5127, dx=-173, dy=62, dz=5131, tag=mobInMap] run tag @s remove mobInMap
+
+
+execute if score tagRunner isRunning matches 1 as @e[tag=mobInMap] run tp @s -171 59 5129
+
 
 tag @a[tag=inMap] remove inMap
 
