@@ -80,7 +80,9 @@ execute as @a[tag=player] if score @s tagCurrentPosX = @s tagPrevPosX if score @
 
 scoreboard players add @a[tag=holdingStill] holdStillTimer 1
 
-scoreboard players set @a[tag=!holdingStill] holdStillTimer 0
+scoreboard players remove @a[tag=!holdingStill] holdStillTimer 1
+
+execute as @a if score @s holdStillTimer matches -1 run scoreboard players set @s holdStillTimer 0
 
 execute as @a if score @s holdStillTimer matches 400 run effect give @s minecraft:glowing 10 1
 
