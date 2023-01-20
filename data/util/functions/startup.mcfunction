@@ -1,7 +1,7 @@
 # Set the tagRunner variable to true
 scoreboard players set tagRunner isRunning 1
 
-# Tag all players inside of the map
+# Tag all players inside of the map (Change these coords to fit your world)
 tag @a[x=-128, y=40, z=5081, dx=-235, dy=150, dz=5188] add player
 
 gamemode adventure @a[tag=player]
